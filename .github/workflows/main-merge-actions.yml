@@ -17,16 +17,19 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install Modules
-        run: npm install
+      - name: Install Dependencies
+        run: yarn
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Build Project
         run: npm run build:vite
-      - name: Start Storybook
-        run: npm run dev:storybook
-      - name: Run Storybook Tests
-        run: npm run test:storybook
+      - name: Build Storybook
+        run: npm run build:storybook --quiet
+      - name: Serve Storybook and run tests
+        run: |
+          npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
+            "npx http-server storybook-static --port 6006 --silent" \
+            "npx wait-on tcp:6006 && yarn test-storybook"
       - name: Run Unit Tests
         run: npm run test:unit
       - name: Run E2E Tests
