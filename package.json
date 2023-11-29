@@ -44,6 +44,7 @@
     "@testing-library/react": "^14.1.2",
     "@types/compose-function": "^0.0.33",
     "@types/jest": "^29.5.10",
+    "@types/node": "^20.10.0",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@types/react-router": "^5.1.20",

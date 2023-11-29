@@ -17,17 +17,19 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: install modules
+      - name: Install Modules
         run: npm install
-      - name: build project
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+      - name: Build Project
         run: npm run build:vite
-      - name: start storybook
+      - name: Start Storybook
         run: npm run dev:storybook
-      - name: run storybook tests
+      - name: Run Storybook Tests
         run: npm run test:storybook
-      - name: run unit tests
+      - name: Run Unit Tests
         run: npm run test:unit
-      - name: run e2e tests
+      - name: Run E2E Tests
         run: npm run test:playwright
-      - name: lint code
+      - name: Lint Code
         run: npm run lint
