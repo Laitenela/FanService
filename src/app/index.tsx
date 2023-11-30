@@ -1,12 +1,13 @@
-import styleClasses from './index.module.scss';
-import { Button } from '@shared/ui/button';
+import { RouterProvider } from 'react-router-dom';
+// import styleClasses from './index.module.scss';
+// import { Button } from '@shared/ui/button';
+import { router } from './routing';
 
 function App() {
 
   return (
     <>
-      <Button>Button here</Button>
-      <div className={styleClasses.app}>Hello</div>
+      <RouterProvider router={router}/>
     </>
   )
 }
