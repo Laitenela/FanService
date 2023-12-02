@@ -1,5 +1,5 @@
 name: Master branch merge tests
-run-name: ${{ github.actor }} is learning GitHub Actions
+run-name: ${{ github.actor }} testing app
 on:
   push: 
     branches: [master]
