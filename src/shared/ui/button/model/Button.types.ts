@@ -1,3 +1,7 @@
+type ButtonTypes = "primary" | "test" | "success" | "link";
+
 export type ButtonProps = {
-  children: string | JSX.Element | JSX.Element[]
+  type: ButtonTypes;
+  children: string | JSX.Element | JSX.Element[];
+  onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }

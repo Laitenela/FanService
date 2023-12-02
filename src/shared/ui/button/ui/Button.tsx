@@ -2,6 +2,10 @@ import { FC } from "react";
 import styles from "./Button.module.scss";
 import { ButtonProps } from "../model/Button.types";
 
-export const Button: FC<ButtonProps> = ({ children }) => {
-  return <button className={styles?.button}>{children}</button>;
+export const Button: FC<ButtonProps> = ({ type, children, onClick }) => {
+  return (
+    <button onClick={(event) => onClick(event)} className={`${styles.button} ${styles[type]}`}>
+      {children}
+    </button>
+  );
 };
