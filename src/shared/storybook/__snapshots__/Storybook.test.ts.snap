@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Shared/Button Primary 1`] = `
-<button>
+<button
+  className="undefined undefined"
+  onClick={[Function]}
+>
   Button
 </button>
 `;
