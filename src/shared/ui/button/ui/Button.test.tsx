@@ -7,6 +7,6 @@ test('demo', () => {
 });
 
 test("Render Button", () => {
-  render(<Button>Test</Button>);
+  render(<Button type={"primary"} onClick={(event) => {event}}>Test</Button>);
   expect(true).toBeTruthy();
 })

@@ -2,11 +2,13 @@ import { createSlice } from "@reduxjs/toolkit";
 import { PayloadAction } from "@reduxjs/toolkit";
 
 export interface UserState {
+  isLogged: boolean;
   id: string | undefined;
   name: string | undefined;
 }
 
 const initialState: UserState = {
+  isLogged: false,
   id: undefined,
   name: undefined,
 }
