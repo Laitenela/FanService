@@ -1,13 +1,627 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React + TS</title>
   </head>
   <body>
-    <div id="root"></div>
+        <header class="header">
+            <h1 class="logo">Fan Servise</h1>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="list__item"><a href="#" class="header__link">Новости</a></li>
+              <li class="list__item"><a href="#" class="header__link">Фандомы</a></li>
+              <li class="list__item"><a href="#" class="header__link">Обзоры</a></li>
+              <li class="list__item"><a href="#" class="header__link">Календарь</a></li>
+              <li class="list__item"><a href="#" class="header__link">Мне повезёт</a></li> <!--Random выбирает рандомное аниме-->
+              <li class="list__item"><a href="#" class="header__link">Избранное</a></li>
+            </ul>
+          </nav>
+        <button class="btn-reset btn-registation">Log In</button>
+    </header>
+<main>
+    <section class="hero-section">
+      c
+      <div class="hero">
+        <h3 class="title hero-title"> Топ 5 </h3>
+        <div class="carousel">
+          <div class="carousel--wrap">
+            <div class="carousel--item">
+              <figure><img src="https://w.forfun.com/fetch/8c/8cb3550cfd1aae0b9c07ffde487a8333.jpeg" alt="Яндере" /></figure>
+             
+            </div>
+        <!--  Закрыл условную карусель, топ 5 Аниме по количеству переходов внутри сайта (или по числу просмотров)
+            <div class="carousel--item">
+              <figure><img src="https://images.unsplash.com/photo-1594786118579-95ba90c801ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" /></figure>
+              <h2 class="carusel-title">Troker</h2>
+            </div>
+        
+            <div class="carousel--item">
+              <figure><img src="https://images.unsplash.com/photo-1509339022327-1e1e25360a41?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" /></figure>
+              <h2 class="carusel-title">Slant</h2>
+            </div>
+        
+            <div class="carousel--item">
+              <figure><img src="https://images.unsplash.com/photo-1525417071002-5ee4e6bb44f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" /></figure>
+              <h2 class="carusel-title">Gravy</h2>
+            </div>
+        
+            <div class="carousel--item">
+              <figure><img src="https://images.unsplash.com/photo-1594072702031-f0e2a602dd2c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" /></figure>
+              <h2 class="carusel-title">Amuse</h2>
+            </div>-->
+            </div>
+          </div>
+      </div>
+    </section>
+
+<section class="U-can-watch">
+  <div class="container watch-container">
+        <h2 class="title watch-title">Что посмотреть</h2> <!--Условное название тайтла, для блока, где будет список аниме. на главной, так же отправляющий в блок фандомы(временное название)-->
+        <ul class="watch-list  flex">
+          <li class="watch-list-item">
+            <img src="img/test-img.jpg" alt="anime-name" class="pre-img">
+            <article class="anime-card">
+                 <div class="time-n-stars">
+                    <div class="chrono">
+                <p class="season-count">
+                  10 сезонов
+                    <span class="epi-count">
+                      666 серий
+                </span> 
+            </p>
+            </div>
+            <div class="stars">
+                        <img src="img/star.svg" alt="четыре звезды из пяти" class="stars">
+                        <img src="img/star.svg" alt="" class="stars">
+                        <img src="img/star.svg" alt="" class="stars">
+                        <img src="img/star.svg" alt="" class="stars">
+                        <img src="img/empty-star.svg" alt="" class="stars">
+                    </div>
+                
+            </div>
+                <h3 class="anime-name">
+                  Клинок рассекающий демонов
+                </h3>
+                <p class="coutnry">
+                    Япония
+                </p>
+                <button class="btn btn-watch btn-reset">Смотреть</button>
+            </article>
+        </li>
+          <li class="watch-list-item">
+              <img src="img/test-img.jpg" alt="anime-name" class="pre-img">
+              <article class="anime-card">
+                   <div class="time-n-stars">
+                      <div class="chrono">
+                  <p class="season-count">
+                    10 сезонов
+                      <span class="epi-count">
+                        666 серий
+                  </span> 
+              </p>
+              </div>
+              <div class="stars">
+                          <img src="img/star.svg" alt="четыре звезды из пяти" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/empty-star.svg" alt="" class="stars">
+                      </div>
+                  
+              </div>
+                  <h3 class="anime-name">
+                    Клинок рассекающий демонов
+                  </h3>
+                  <p class="coutnry">
+                      Япония
+                  </p>
+                  <button class="btn btn-watch btn-reset">Смотреть</button>
+              </article>
+          </li>
+          <li class="watch-list-item">
+              <img src="img/test-img.jpg" alt="anime-name" class="pre-img">
+              <article class="anime-card">
+                  <div class="time-n-stars">
+                  <div class="chrono">
+                  <p class="season-count">
+                    10 сезонов
+                      <span class="epi-count">
+                        666 серий
+                  </span>
+              </p>
+          </div>
+          <div class="stars">
+                          <img src="img/star.svg" alt="пять звезды из пяти" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                     
+              </div>
+              </div>
+                  <h3 class="anime-name">
+                    Клинок рассекающий демонов
+                  </h3>
+                  <p class="coutnry">
+                      Япония
+                  </p>
+                  <button class="btn btn-watch btn-reset">Смотреть</button>
+              </article>
+          </li>
+          <li class="watch-list-item">
+              <img src="img/test-img.jpg" alt="anime-name" class="pre-img">
+              <article class="anime-card">
+                  <div class="time-n-stars">
+                  <div class="chrono">
+                  <p class="season-count">
+                    10 сезонов
+                      <span class="epi-count">
+                        666 серий
+                  </span>
+              </p>
+              </div>
+              <div class="stars">
+                          <img src="img/star.svg" alt="пять звезд из пяти" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                      
+                  
+                  </div>
+              </div>
+                  <h3 class="anime-name">
+                      Клинок рассекающий демонов
+                  </h3>
+                  <p class="coutnry">
+                      Япония
+                  </p>
+                  <button class="btn btn-watch btn-reset">Смотреть</button>
+              </article>
+          </li>
+          <li class="watch-list-item">
+              <img src="img/test-img.jpg" alt="anime-name" class="pre-img">
+              <article class="anime-card">
+                  <div class="time-n-stars">
+                  <div class="chrono">
+                  <p class="season-count">
+                    10 сезонов
+                      <span class="epi-count">
+                        666 серий
+                      </span>
+                  </p>
+                  </div>
+                  <div class="stars">
+                          <img src="img/star.svg" alt="четыре звезды из пяти" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/empty-star.svg" alt="" class="stars">
+                     
+                  
+              </div>
+          </div>
+                  <h3 class="anime-name">
+                    Клинок рассекающий демонов
+                  </h3>
+                  <p class="coutnry">
+                      Япония
+                  </p>
+                  <button class="btn btn-watch btn-reset">Смотреть</button>
+              </article>
+          </li>
+          <li class="watch-list-item">
+              <img src="img/test-img.jpg" alt="anime-name" class="pre-img">
+              <article class="anime-card">
+                  <div class="time-n-stars">
+                  <div class="chrono">
+                  <p class="season-count">
+                    10 сезонов
+                      <span class="epi-count">
+                        666 серий
+                   </span>
+                  </p>
+              </div>
+              <div class="stars">
+                          <img src="img/star.svg" alt="четыре звезды  из пяти" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/empty-star.svg" alt="" class="stars">
+                      
+                      </div>  
+                  </div>
+                  <h3 class="anime-name">
+                      Клинок рассекающий демонов
+                  </h3>
+                  <p class="coutnry">
+                      Япония
+                  </p>
+                  <button class="btn btn-watch btn-reset">Смотреть</button>
+              </article>
+          </li>
+          <li class="watch-list-item">
+              <img src="img/test-img.jpg" alt="anime-name" class="pre-img">
+              <article class="anime-card">
+                  <div class="time-n-stars">
+                  <div class="chrono">
+                  <p class="season-count">
+                    10 сезонов
+                      <span class="epi-count">
+                        666 серий
+                          </span>
+                      </p>
+                  </div>
+                  <div class="stars">
+                          <img src="img/star.svg" alt="пять звезд из пяти" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">    
+                      </div>
+                      </div>
+                  <h3 class="anime-name">
+                      Клинок рассекающий демонов
+                  </h3>
+                  <p class="coutnry">
+                      Япония
+                  </p>
+                  <button class="btn btn-watch btn-reset">Смотреть</button>
+              </article>
+          </li>
+          <li class="watch-list-item">
+              <img src="img/test-img.jpg" alt="anime-name" class="pre-img">
+              <article class="anime-card">
+                  <div class="time-n-stars">
+                  <div class="chrono">
+                  <p class="season-count">
+                      10 сезонов
+                      <span class="epi-count">
+                        666 серий
+                      </span>
+                  </p>
+                  </div>
+                  <div class="stars">
+                          <img src="img/star.svg" alt="четыре звезды из пяти" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/empty-star.svg" alt="" class="stars">
+                      
+                      </div>
+                      </div>
+                  <h3 class="anime-name">
+                    Клинок рассекающий демонов
+                  </h3>
+                  <p class="coutnry">
+                      Япония
+                  </p>
+                  <button class="btn btn-watch btn-reset">Смотреть</button>
+              </article>
+          </li>
+          <li class="watch-list-item">
+            <img src="img/test-img.jpg" alt="anime-name" class="pre-img">
+            <article class="anime-card">
+                <div class="time-n-stars">
+                <div class="chrono">
+                <p class="season-count">
+                    10 cезонов
+                    <span class="epi-count">
+                      666 серий
+                    </span>
+                </p>
+                </div>
+                <div class="stars">
+                        <img src="img/star.svg" alt="четыре звезды из пяти" class="stars">
+                        <img src="img/star.svg" alt="" class="stars">
+                        <img src="img/star.svg" alt="" class="stars">
+                        <img src="img/star.svg" alt="" class="stars">
+                        <img src="img/empty-star.svg" alt="" class="stars">
+                    
+                    </div>
+                    </div>
+                <h3 class="anime-name">
+                    Клинок рассекающий демонов
+                </h3>
+                <p class="coutnry">
+                    Япония
+                </p>
+                <button class="btn btn-watch btn-reset">Смотреть</button>
+            </article>
+        </li>
+      </ul>
+      </div>
+
+  
+</section>
+<section class="favorite">
+  <div class="container favorite-container">
+        <h2 class="title favorite-title">Избранное</h2> <!--Условное название тайтла, для блока, где будет список аниме. на главной, так же отправляющий в блок фандомы(временное название)-->
+        <ul class="watch-list  flex">
+          <li class="watch-list-item">
+            <img src="img/test-img.jpg" alt="anime-name" class="pre-img">
+            <article class="anime-card">
+                 <div class="time-n-stars">
+                    <div class="chrono">
+                <p class="season-count">
+                  10 сезонов
+                    <span class="epi-count">
+                      666 серий
+                </span> 
+            </p>
+            </div>
+            <div class="stars">
+                        <img src="img/star.svg" alt="четыре звезды из пяти" class="stars">
+                        <img src="img/star.svg" alt="" class="stars">
+                        <img src="img/star.svg" alt="" class="stars">
+                        <img src="img/star.svg" alt="" class="stars">
+                        <img src="img/empty-star.svg" alt="" class="stars">
+                    </div>
+                
+            </div>
+                <h3 class="anime-name">
+                  Клинок рассекающий демонов
+                </h3>
+                <p class="coutnry">
+                    Япония
+                </p>
+                <button class="btn btn-watch btn-reset">Продолжить просмотр</button>
+            </article>
+        </li>
+          <li class="watch-list-item">
+              <img src="img/test-img.jpg" alt="anime-name" class="pre-img">
+              <article class="anime-card">
+                   <div class="time-n-stars">
+                      <div class="chrono">
+                  <p class="season-count">
+                    10 сезонов
+                      <span class="epi-count">
+                        666 серий
+                  </span> 
+              </p>
+              </div>
+              <div class="stars">
+                          <img src="img/star.svg" alt="четыре звезды из пяти" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/empty-star.svg" alt="" class="stars">
+                      </div>
+                  
+              </div>
+                  <h3 class="anime-name">
+                    Клинок рассекающий демонов
+                  </h3>
+                  <p class="coutnry">
+                      Япония
+                  </p>
+                  <button class="btn btn-watch btn-reset">Продолжить просмотр</button>
+              </article>
+          </li>
+          <li class="watch-list-item">
+              <img src="img/test-img.jpg" alt="anime-name" class="pre-img">
+              <article class="anime-card">
+                  <div class="time-n-stars">
+                  <div class="chrono">
+                  <p class="season-count">
+                    10 сезонов
+                      <span class="epi-count">
+                        666 серий
+                  </span>
+              </p>
+          </div>
+          <div class="stars">
+                          <img src="img/star.svg" alt="пять звезды из пяти" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                     
+              </div>
+              </div>
+                  <h3 class="anime-name">
+                    Клинок рассекающий демонов
+                  </h3>
+                  <p class="coutnry">
+                      Япония
+                  </p>
+                  <button class="btn btn-watch btn-reset">Продолжить просмотр</button>
+              </article>
+          </li>
+          <li class="watch-list-item">
+              <img src="img/test-img.jpg" alt="anime-name" class="pre-img">
+              <article class="anime-card">
+                  <div class="time-n-stars">
+                  <div class="chrono">
+                  <p class="season-count">
+                    10 сезонов
+                      <span class="epi-count">
+                        666 серий
+                  </span>
+              </p>
+              </div>
+              <div class="stars">
+                          <img src="img/star.svg" alt="пять звезд из пяти" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                      
+                  
+                  </div>
+              </div>
+                  <h3 class="anime-name">
+                      Клинок рассекающий демонов
+                  </h3>
+                  <p class="coutnry">
+                      Япония
+                  </p>
+                  <button class="btn btn-watch btn-reset">Продолжить просмотр</button>
+              </article>
+          </li>
+          <li class="watch-list-item">
+              <img src="img/test-img.jpg" alt="anime-name" class="pre-img">
+              <article class="anime-card">
+                  <div class="time-n-stars">
+                  <div class="chrono">
+                  <p class="season-count">
+                    10 сезонов
+                      <span class="epi-count">
+                        666 серий
+                      </span>
+                  </p>
+                  </div>
+                  <div class="stars">
+                          <img src="img/star.svg" alt="четыре звезды из пяти" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/empty-star.svg" alt="" class="stars">
+                     
+                  
+              </div>
+          </div>
+                  <h3 class="anime-name">
+                    Клинок рассекающий демонов
+                  </h3>
+                  <p class="coutnry">
+                      Япония
+                  </p>
+                  <button class="btn btn-watch btn-reset">Продолжить просмотр</button>
+              </article>
+          </li>
+          <li class="watch-list-item">
+              <img src="img/test-img.jpg" alt="anime-name" class="pre-img">
+              <article class="anime-card">
+                  <div class="time-n-stars">
+                  <div class="chrono">
+                  <p class="season-count">
+                    10 сезонов
+                      <span class="epi-count">
+                        666 серий
+                   </span>
+                  </p>
+              </div>
+              <div class="stars">
+                          <img src="img/star.svg" alt="четыре звезды  из пяти" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/empty-star.svg" alt="" class="stars">
+                      
+                      </div>  
+                  </div>
+                  <h3 class="anime-name">
+                      Клинок рассекающий демонов
+                  </h3>
+                  <p class="coutnry">
+                      Япония
+                  </p>
+                  <button class="btn btn-watch btn-reset">Продолжить просмотр</button>
+              </article>
+          </li>
+          <li class="watch-list-item">
+              <img src="img/test-img.jpg" alt="anime-name" class="pre-img">
+              <article class="anime-card">
+                  <div class="time-n-stars">
+                  <div class="chrono">
+                  <p class="season-count">
+                    10 сезонов
+                      <span class="epi-count">
+                        666 серий
+                          </span>
+                      </p>
+                  </div>
+                  <div class="stars">
+                          <img src="img/star.svg" alt="пять звезд из пяти" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">    
+                      </div>
+                      </div>
+                  <h3 class="anime-name">
+                      Клинок рассекающий демонов
+                  </h3>
+                  <p class="coutnry">
+                      Япония
+                  </p>
+                  <button class="btn btn-watch btn-reset">Продолжить просмотр</button>
+              </article>
+          </li>
+          <li class="watch-list-item">
+              <img src="img/test-img.jpg" alt="anime-name" class="pre-img">
+              <article class="anime-card">
+                  <div class="time-n-stars">
+                  <div class="chrono">
+                  <p class="season-count">
+                      10 сезонов
+                      <span class="epi-count">
+                        666 серий
+                      </span>
+                  </p>
+                  </div>
+                  <div class="stars">
+                          <img src="img/star.svg" alt="четыре звезды из пяти" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/star.svg" alt="" class="stars">
+                          <img src="img/empty-star.svg" alt="" class="stars">
+                      
+                      </div>
+                      </div>
+                  <h3 class="anime-name">
+                    Клинок рассекающий демонов
+                  </h3>
+                  <p class="coutnry">
+                      Япония
+                  </p>
+                  <button class="btn btn-watch btn-reset">Продолжить просмотр</button>
+              </article>
+          </li>
+          <li class="watch-list-item">
+            <img src="img/test-img.jpg" alt="anime-name" class="pre-img">
+            <article class="anime-card">
+                <div class="time-n-stars">
+                <div class="chrono">
+                <p class="season-count">
+                    10 cезонов
+                    <span class="epi-count">
+                      666 серий
+                    </span>
+                </p>
+                </div>
+                <div class="stars">
+                        <img src="img/star.svg" alt="четыре звезды из пяти" class="stars">
+                        <img src="img/star.svg" alt="" class="stars">
+                        <img src="img/star.svg" alt="" class="stars">
+                        <img src="img/star.svg" alt="" class="stars">
+                        <img src="img/empty-star.svg" alt="" class="stars">
+                    
+                    </div>
+                    </div>
+                <h3 class="anime-name">
+                    Клинок рассекающий демонов
+                </h3>
+                <p class="coutnry">
+                    Япония
+                </p>
+                <button class="btn btn-watch btn-reset">Продолжить просмотр</button>
+            </article>
+        </li>
+      </ul>
+      </div>
+
+  
+</section>
+
+</main>
+    <script src="/js/script.js"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

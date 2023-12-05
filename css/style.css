@@ -1,0 +1,242 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ 
+body {
+  background-color: #13141C;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+
+
+
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reset-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+ul {
+ 
+  padding: 0;
+  
+}
+
+li {
+  list-style-type: none;
+ 
+}
+a {
+  text-decoration: none;
+}
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: #1E202C;
+}
+
+
+.container {
+  padding: 0px 40px;
+}
+
+.flex {
+  display: flex;
+}
+
+.logo {
+  font-size: 35px;
+  color: #fff;
+  user-select: none;
+}
+
+.header__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__nav a {
+
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.header__nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: orange;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .5s;
+}
+
+.header__nav a:hover {
+  color: orange;
+}
+
+
+
+
+.header__nav a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+  color: orange;
+}
+
+
+.btn-registation {
+width: 130px;
+height: 60px;
+background: transparent;
+border: 2px solid #fff;
+color: #fff;
+border-radius: 6px;
+cursor: pointer;
+font-size: 18px;
+transition: .5s;
+}
+
+.btn-registation:hover {
+  background: orange;
+  border: 2px solid orange;
+}
+
+.title {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+
+.watch-list-item {
+  max-width: 390px;
+  margin-bottom: 24px;
+  margin-right: 24px;
+  border-radius: 15px;
+  background-color:  #1E202C;
+}
+
+
+
+.anime-card {
+  padding:0  auto;
+  padding: 32px 45px 45px 45px;
+  border-radius: 15px;
+
+}
+
+
+.price-n-stars {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;  
+}
+
+.chrono {
+  display: flex;
+  flex-direction: column;
+  max-width: 153px;
+}
+
+
+.stars {
+  margin-bottom: 5px;
+}
+
+.season-count  {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: white;
+  margin: 0;
+  margin-bottom: 5px;
+  }
+
+
+.anime-name{
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+  margin: 0 auto;
+  margin-bottom: 16px;
+
+  }
+
+
+  .coutnry {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #999999;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    }
+
+
+    .btn-watch {
+      width: 130px;
+      height: 60px;
+      background: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: .5s;
+      
+      
+      }
+
+      .btn-watch:hover {
+        background: orange;
+        border: 2px solid orange;
+      }
